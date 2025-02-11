@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))() 
-local Window = Library.CreateLib("Tupoi's DOORS Mode Loader, v0.5+", "DarkTheme") 
+local Window = Library.CreateLib("Tupoi's DOORS Mode Loader, v0.6", "DarkTheme") 
 local ModesTab = Window:NewTab("Modes") 
  
 -- Modes Setup 
@@ -40,6 +40,26 @@ MiscSection:NewButton("Load Flashlight", "Modded by Me, Tupoi", function()
 end)
 
 -- Entity Spawner
+
+local ESTab = Window:NewTab("Custom Entities")
+local EntitySection = ESTab:NewSection("Entities")
+
+EntitySection:NewButton("Rush *AFTER CLICK, CHECK CONSOLE. F9", "just a rush", function() 
+    print("wait for 0.7 / 0.7+ brou.") 
+end)
+
+-- Custom Room loader
+
+local CRTab = Window:NewTab("Custom Rooms")
+local RoomSection = ESTab:NewSection("Rooms")
+
+RoomSection:NewButton("Mysterious Room", "by Me, Have fun!", function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TupoiRomcha/ModesLoader/blob/main/Custom%20Rooms/CustomRoom01.lua"))() 
+end)
+
+RoomSection:NewButton("Storage Room", "by TotallyNotChrono, Have fun!", function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TupoiRomcha/ModesLoader/blob/main/Custom%20Rooms/CR02_Chrono.lua"))() 
+end)
 
 local entityTab = Window:NewTab("Entities")
 local entitySection = FunTab:NewSection("Coming Soon!")
