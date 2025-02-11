@@ -60,6 +60,3 @@ end)
 RoomSection:NewButton("Storage Room", "by TotallyNotChrono, Have fun!", function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/TupoiRomcha/ModesLoader/blob/main/Custom%20Rooms/CR02_Chrono.lua"))() 
 end)
-
-local entityTab = Window:NewTab("Entities")
-local entitySection = FunTab:NewSection("Coming Soon!")
