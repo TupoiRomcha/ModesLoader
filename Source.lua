@@ -51,7 +51,7 @@ end)
 -- Custom Room loader
 
 local CRTab = Window:NewTab("Custom Rooms")
-local RoomSection = ESTab:NewSection("Rooms")
+local RoomSection = CRTab:NewSection("Rooms")
 
 RoomSection:NewButton("Mysterious Room", "by Me, Have fun!", function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/TupoiRomcha/ModesLoader/blob/main/Custom%20Rooms/CustomRoom01.lua"))() 
@@ -59,4 +59,21 @@ end)
 
 RoomSection:NewButton("Storage Room", "by TotallyNotChrono, Have fun!", function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/TupoiRomcha/ModesLoader/blob/main/Custom%20Rooms/CR02_Chrono.lua"))() 
+end)
+
+-- Entity Spawner
+
+local CITab = Window:NewTab("Custom Items")
+local ItemsSection = CITab:NewSection("Items")
+
+ItemsSection:NewButton("Stick *WHAT?*", "just a minecraft stick.", function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Debug%20Stick"))()
+end)
+
+ItemsSection:NewButton("Chocolate", "yummy.", function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Chocolate%20Bar.lua"))()
+end)
+
+ItemsSection:NewButton("Guiding Candle", "useless", function() 
+    loadstring(game:HttpGet("https://pastebin.com/raw/88zSdYmA"))()
 end)
